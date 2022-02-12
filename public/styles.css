@@ -1,0 +1,90 @@
+body {
+    background-color: #002b36;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+
+pre {
+    margin: 0;
+}
+
+.wrapper > .display-number {
+    color: #7D7D7D;
+    text-align: end;
+    font-family: monospace;
+}
+
+.wrapper > pre > #display-text {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+textarea {
+    resize: none;
+    background-color: transparent;
+    width: 100%;
+    margin-left: 1rem;
+    padding: 0;
+    color: #7D7D7D;
+    min-height: calc(100vh - 2rem);
+    border: none;
+    outline: none;
+}
+
+.buttons-wrapper {
+    position: fixed;
+    opacity: .15;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    background-color: #0081A2;
+    transition: opacity 200ms ease-in-out;
+}
+
+.buttons-wrapper:hover {
+    opacity: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+
+.logo:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    margin-top: .5;
+    justify-content: center;
+}
+
+.buttons > * + * {
+    margin-left: .25rem;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    border: 1px solid #002b36;
+    color: #002b36;
+    border-radius: 0.25rem;
+    transition: background-color 200ms ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25 0.5;
+}
+
+.btn:hover {
+    background-color: #83E5FF;
+}
